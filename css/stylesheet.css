@@ -1,0 +1,154 @@
+/* Document font family */
+body,
+footer {
+  font-family: arial, helvetica, sans-serif;
+}
+
+a {
+  color: #e4e3d7;
+}
+
+/* Nav styling */
+header {
+  background-color: #0c4004;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  position: sticky;
+  margin: -10px;
+}
+
+/* Hero styling */
+.hero {
+  background-color: #0c4004;
+  background-image: url(/imgs/workspace-laptop.jpg);
+  background-repeat: 0;
+  background-size: cover;
+  height: 300px;
+  margin: 10px -10px 0px -10px;
+  color: #e4e3d7;
+}
+
+.space {
+  height: 50px;
+  background-color: #e4e3d7;
+  margin: 0px -10px 0px -10px;
+}
+
+/* Education section */
+.education {
+  background-color: white;
+  margin: 0px -10px 0px -10px;
+}
+
+#codespace {
+  background-color: grey;
+  border-radius: 3px;
+}
+
+/* Experience section */
+.experience {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Skills section */
+.skills {
+  background-color: #e4e3d7;
+  display: grid;
+  margin: 0px -10px 0px -10px;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #0c4004;
+  margin: 0px -10px -12px -10px;
+}
+
+/* Mobile */
+@media only screen and (min-width: 300px) {
+  header {
+    font-size: 12px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #hero-image {
+    border-radius: 7px;
+    height: 125px;
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  #uct {
+    height: 30px;
+    width: 220px;
+  }
+
+  #codespace {
+    height: 30px;
+    width: 170px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #experience-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 7px;
+    margin: 50px 0px 0px 0px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 14px;
+  }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+  header {
+    font-size: 16px;
+  }
+}

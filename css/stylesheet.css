@@ -49,13 +49,14 @@ header {
   border-radius: 3px;
 }
 
-/* Experience section */
-.experience {
+.projects {
+  background-color: #e4e3d7;
+  margin: 0px -10px 0px -10px;
   display: flex;
-  flex-direction: row-reverse;
-  align-content: center;
-  justify-content: center;
-  padding: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* Skills section */
@@ -95,11 +96,11 @@ footer {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .education {
@@ -108,7 +109,6 @@ footer {
     flex-wrap: wrap;
     padding: 1rem;
     align-items: center;
-    align-content: center;
     text-align: center;
   }
 
@@ -123,19 +123,51 @@ footer {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
   }
 
-  #experience-image {
-    height: 150px;
-    width: 150px;
-    border-radius: 7px;
-    margin: 50px 0px 0px 0px;
+  h3 {
+    font-size: 13px;
   }
 
-  li {
-    font-size: 14px;
+  .experience {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 150px;
+    gap: 5px;
+  }
+
+  #experience-h {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  #experience-1 {
+    background-color: #0c4004;
+    border-radius: 3px;
+    color: #e4e3d7;
+    height: 120px;
+    padding: 5px;
+    grid-area: 2 / 1 / 4 / 2;
+  }
+
+  #experience-2 {
+    background-color: #0c4004;
+    border-radius: 3px;
+    color: #e4e3d7;
+    height: 120px;
+    padding: 5px;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  #experience-3 {
+    background-color: #0c4004;
+    border-radius: 3px;
+    color: #e4e3d7;
+    height: 120px;
+    padding: 5px;
+    grid-area: 2 / 3 / 3 / 4;
   }
 }
 

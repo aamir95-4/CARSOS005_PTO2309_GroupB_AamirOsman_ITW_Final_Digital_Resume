@@ -103,6 +103,7 @@ textarea {
 #email {
   padding: 10px;
   margin: 5px 0px;
+  width: 200px;
   border: 0;
   border-radius: 7px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
@@ -410,7 +411,7 @@ textarea {
     grid-template-rows: 70px 150px 40px;
     gap: 5px;
 
-    height: 300px;
+    height: 350px;
   }
 
   #skills-h {
